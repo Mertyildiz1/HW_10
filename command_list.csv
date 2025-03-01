@@ -1,0 +1,42 @@
+    1  git config --global user.name "Mert Yıldız"
+    2  git config --global user.email "1yildizmert@gmail.com"
+    3  git config --global --list
+    4  git clone https://github.com/Mertyildiz1/HW_10.git
+    5  cd HW_10
+    6  touch test_ignore.txt
+    7  git status
+    8  pwd
+    9  git status
+   10  ls
+   11  git rm --cached test_ignore.txt
+   12  git status
+   13  ls
+   14  ls -a
+   15  nano .gitignore
+   16  git rm --cached test_ignore.txt
+   17  git status
+   18  git status
+   19  git add .
+   20  git commit -m "gitignore'a test_ignore.txt eklendi"
+   21  git status
+   22  touch main_test.txt
+   23  git add .
+   24  git commit -m "main_test.txt oluşturuldu"
+   25  git checkout develop
+   26  git checkout -b develop
+   27  touch develop_test.txt
+   28  git add .
+   29  git commit -m "develop branchinde develop_test.txt oluşturuldu"
+   30  git status
+   31  git add .
+   32  git commit -m "develop_test.txt'ye "mert yıldız hw" text'i eklendi"
+   33  git status
+   34  checkout main
+   35  git checkout main
+   36  git add .
+   37  git commit -m "develop_test.txt güncellendi"
+   38  git checkout main
+   39  git merge develop
+   40  git status
+   41  git log
+   42  history > command_list.csv
